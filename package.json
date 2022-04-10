@@ -2,7 +2,7 @@
   "name": "line-break-remover",
 	"displayName": "LineBreakRemover",
 	"description": "This just replaces all linebreaks with space!",
-	"version": "0.0.10",
+	"version": "0.0.11",
 	"publisher": "mnikravesh",
 	"author": {
 		"name": "M.Nikravesh"

@@ -12,9 +12,10 @@ export function activate(context: vscode.ExtensionContext) {
 			const linebreaksRemovedText=selectedText.replace(/(\r\n|\n|\r)/gm, " ");
 			
 			editor?.edit((editBuilder)=>{
-				editBuilder.replace(editor.selection,linebreaksRemovedText)
-			})
-			vscode.window.showInformationMessage(linebreaksRemovedText);
+				editBuilder.replace(editor.selection,linebreaksRemovedText);
+			});
+			vscode.env.clipboard.writeText(linebreaksRemovedText);
+			vscode.window.showInformationMessage("Copied to clipboard");
 		}
 	});
 

@@ -2,7 +2,7 @@
 
 ## Features
 
-There is no feature, this extenstion just removes all the line breaks from selected text in your editor and replaces them with a space!
+There is no feature, this extension just removes all the line breaks from selected text in your editor and replaces them with a space!
 The result text goes to your clipboard at the end.
 
 ## How to use:

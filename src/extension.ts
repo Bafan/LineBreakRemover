@@ -9,7 +9,7 @@ export function activate(context: vscode.ExtensionContext) {
         const selectedText = editor?.document.getText(editor.selection);
 		if (selectedText!==undefined)
 		{
-			const linebreaksRemovedText=selectedText.replace(/(\r\n|\n|\r)/gm, " ");
+			const linebreaksRemovedText=selectedText.replace(/(\s\s+)/gm, " ");
 			
 			editor?.edit((editBuilder)=>{
 				editBuilder.replace(editor.selection,linebreaksRemovedText);
